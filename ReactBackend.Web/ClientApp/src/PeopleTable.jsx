@@ -84,12 +84,10 @@ class PeopleTable extends React.Component {
            
         })
     }
-    onCheckAll=()=>{
-        this.setState({checkedPeople:[...this.state.checkedPeople]})
-    }
-    // onCheckAll = () => {
-    //     this.setState({ checkedPeople: this.state.people.map(p => p.id) });
-    // }
+   
+     onCheckAll = () => {
+         this.setState({ checkedPeople: this.state.people.map(p => p.id) });
+     }
     onUncheckAll = () => {
         this.setState({ checkedPeople: [] })
     }
